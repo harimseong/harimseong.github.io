@@ -27,7 +27,7 @@ C/C++, shell script, Makefile, git, Docker, x86
 
 ##### HTTP Webserver
 - Implemented a web server supporting HTTP/1.1 and a subset of the nginx configuration.
-- Optimized the HTTP message processing pipeline to minimize memory footprint. Upon receiving an HTTP message, the body is sent to the destination immediately. Performance gain is significant, especially when the message body is large, compared to waiting until the entire message is fully received.
+- Optimized the HTTP message processing pipeline to minimize memory footprint. Upon receiving an incomplete HTTP message, partial body is sent to the destination(e.g. CGI process) immediately. Performance gain is significant, especially when the message body is large, compared to waiting until the entire message is fully received.
 
 
 ### Education
@@ -49,7 +49,7 @@ C/C++, shell script, Makefile, git, Docker, x86
 2024\. 2 - 2025. 1
 
 - Automated simulation configuration, job batching and data processing using shell script.
-- Provided debugging support for C++, ROOT, and research tool build errors for students.
+- Provided debugging support for C++, ROOT, and research library build errors for researchers in the lab.
 
 
 ### Achievements

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 TITLE=""
 read -p "Enter the title of a post: " TITLE
 FILENAME="$(date +"%F")-$(echo $TITLE | sed 's/ /_/g').md"

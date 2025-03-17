@@ -19,13 +19,13 @@ C/C++, shell script, Makefile, git, Docker, x86
 ### Projects
 <hr style="border: none; border-bottom: 1px solid white;">
 
-##### Unix Shell
+##### [Unix Shell](https://github.com/harimseong/shell_project)
 - Implemented a subset of the POSIX shell.
 - Handwrote a recursive descent parser for better readability and flexibility compared to other methods.
 - Debugged syntax by printing out the syntax structure.
 - Conducted module and integration testing using shell script.
 
-##### HTTP Webserver
+##### [HTTP Webserver](https://github.com/harimseong/HTTP_server)
 - Implemented a web server supporting HTTP/1.1 and a subset of the nginx configuration.
 - Optimized the HTTP message processing pipeline to minimize memory footprint. Upon receiving an incomplete HTTP message, partial body is sent to the destination(e.g. CGI process) immediately. Performance gain is significant, especially when the message body is large, compared to waiting until the entire message is fully received.
 

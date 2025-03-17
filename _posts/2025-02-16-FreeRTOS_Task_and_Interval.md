@@ -2,7 +2,7 @@
 layout: post
 title: "FreeRTOS Task and Interval"
 date: 2025-02-16 22:31:11 +0900
-categories:
+categories: FreeRTOS
 ---
 
 ## FreeRTOS

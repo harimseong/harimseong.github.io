@@ -9,7 +9,7 @@ permalink: /about/
 
 ### Summary
 <hr style="border: none; border-bottom: 1px solid white;">
-I am software engineer with a strong interest in low-level areas such as embedded softwares and operating systems. Writing and debugging such things is challenging but gives rewarding experience.
+I am software engineer with a strong interest in low-level areas such as embedded softwares and operating systems. Developing and debugging such things is challenging but gives rewarding experience.
 
 ### Skills
 <hr style="border: none; border-bottom: 1px solid white;">
@@ -43,14 +43,15 @@ Experience
 
 ### Education
 <hr style="border: none; border-bottom: 1px solid white;">
-##### Cadet, 42 Seoul
+
+##### 42 Seoul, Cadet
 2021\. 10 - 2023\. 10
 - Peer evaluation system
 - Project based learning
 - Autonomous learning and problem solving
 
 
-##### Bachelor's in Physics, Seongkyunkwan University (SKKU)
+##### Seongkyunkwan University (SKKU), Bachelor's in Physics
 2025\. 2
 
 ### Experience

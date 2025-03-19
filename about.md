@@ -43,8 +43,8 @@ Experience
 
 ### Education
 <hr style="border: none; border-bottom: 1px solid white;">
-##### 42 Seoul, Member
-2022\. 10 - Present
+##### Cadet, 42 Seoul
+2021\. 10 - 2023\. 10
 - Peer evaluation system
 - Project based learning
 - Autonomous learning and problem solving

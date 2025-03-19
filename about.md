@@ -23,13 +23,21 @@ C/C++, shell script, Makefile, git, Docker, x86
 Project Detail
 - Implemented a subset of the POSIX shell according to the POSIX documents.
 - Handwrote a recursive descent parser for better readability and flexibility compared to other parsing methods.
+- Used `fork`, `execve` and `pipe` system calls to create processes and manage IPC. 
 - Debugged syntax by printing out the syntax structure.
-- Conducted integration test using shell script.
+
+Experience
+- Conducted integration test using shell script that compares the shell with bash to see if it conforms to the standard.
+- Improved Makefile for portability across macOS and Linux. This project was done using a few C standard functions, UNIX system call and libreadline. I had to handle only libreadline for portable compile.
 
 ##### [HTTP Webserver](https://github.com/harimseong/HTTP_server)
+Project Detail
 - Implemented a web server supporting HTTP/1.1 and a subset of the nginx configuration.
-- Optimized the HTTP message processing pipeline to minimize memory footprint. Upon receiving an incomplete HTTP message, partial body is sent to the destination(e.g. CGI process) immediately. Performance gain is significant, especially when the message body is large, compared to waiting until the entire message is fully received.
+
+Experience
 - Used Xcode Instruments tools to increase the software quality, Leaks for memory usage monitoring and fixing memory leaks, and Profiler to make sure every parts are consuming CPU as expected and find bad logics such as unnecessary copy and infinite loop.
+
+- Optimized the HTTP message processing pipeline to minimize memory footprint. Upon receiving an incomplete HTTP message, partial body is sent to the destination(e.g. CGI process) immediately. It led to significant performance gain, especially when the message body is large, because it didn't wait until the entire message is fully received.
 
 
 ### Education
@@ -64,6 +72,6 @@ Project Detail
 - Gained experience to network layer. Ethernet for HPC and ZCU communication, and CAN for ZCU and Arduino communication.
 - Developed a FreeRTOS task for parking logic based on state machine running on HPC (RA6M3 ECU).
 
-Problems
+Experience
 - There was severe fluctuations of sensor value. To mitigate this, reduced the time interval of the task to receive 20 sensor response in the same time frame and derived an average of 20 consecutive values from an ultrasonic sensor.
 - Had to move the car by hand to starting point whenever a test is done. To minimize labor, added new functionalities to buttons in HPC. Motor stop and reverse, state initialization to skip unnecessary states that succeeded before.

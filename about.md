@@ -29,6 +29,7 @@ Project Detail
 Experience
 - Conducted integration test using shell script that compares the shell with bash to see if it conforms to the standard.
 - Improved Makefile for portability across macOS and Linux. This project was done using a few C standard functions, UNIX system call and libreadline. I had to handle only libreadline for portable compile.
+- In macOS environment, I used docker to use tools available in Linux such as valgrind, gcc sanitizer.
 
 ##### [HTTP Webserver](https://github.com/harimseong/HTTP_server)
 Project Detail
@@ -58,7 +59,8 @@ Experience
 ##### SKKU High Energy Nuclear Physics Lab, Intern
 2024\. 2 - 2025. 1
 
-- Automated simulation configuration, job batching and data processing using shell script.
+- Automated EIC ePIC simulation configuration, job batching and data processing using [shell script](https://github.com/harimseong/henpl/tree/main/eic) and writing [C++](https://github.com/harimseong/henpl/tree/main/eic/fsam).
+- Participated Geant4 project for BIC simulation. Changed detector geometry according to requirements
 - Provided debugging support for C++, ROOT, and research library build errors for researchers in the lab.
 
 

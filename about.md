@@ -20,23 +20,25 @@ C/C++, shell script, Makefile, git, Docker, x86
 <hr style="border: none; border-bottom: 1px solid white;">
 
 ##### [Unix Shell](https://github.com/harimseong/shell_project)
-- Implemented a subset of the POSIX shell.
-- Handwrote a recursive descent parser for better readability and flexibility compared to other methods.
+Project Detail
+- Implemented a subset of the POSIX shell according to the POSIX documents.
+- Handwrote a recursive descent parser for better readability and flexibility compared to other parsing methods.
 - Debugged syntax by printing out the syntax structure.
-- Conducted module and integration testing using shell script.
+- Conducted integration test using shell script.
 
 ##### [HTTP Webserver](https://github.com/harimseong/HTTP_server)
 - Implemented a web server supporting HTTP/1.1 and a subset of the nginx configuration.
 - Optimized the HTTP message processing pipeline to minimize memory footprint. Upon receiving an incomplete HTTP message, partial body is sent to the destination(e.g. CGI process) immediately. Performance gain is significant, especially when the message body is large, compared to waiting until the entire message is fully received.
+- Used Xcode Instruments tools to increase the software quality, Leaks for memory usage monitoring and fixing memory leaks, and Profiler to make sure every parts are consuming CPU as expected and find bad logics such as unnecessary copy and infinite loop.
 
 
 ### Education
 <hr style="border: none; border-bottom: 1px solid white;">
 ##### 42 Seoul, Member
 2022\. 10 - Present
-- Project based learning
-- Autonomous learning, problem solving
 - Peer evaluation system
+- Project based learning
+- Autonomous learning and problem solving
 
 
 ##### Bachelor's in Physics, Seongkyunkwan University (SKKU)
@@ -57,7 +59,11 @@ C/C++, shell script, Makefile, git, Docker, x86
 ##### SKKU Next-generation Automotive Network SW Team Competition, 3rd place
 2025\. 2
 
-- Assembled hardware for zonal architecture in small scale using a HPC, 3 ZCUs, 3 Arduinos and 12 ultrasonic sensors.
-- Gained experience with network layer, Ethernet for HPC and ZCU communication, and CAN for ZCU and Arduino communication.
-- Developed a FreeRTOS task for parking logic running on HPC (RA6M3 MCU).
-- Reduced the time interval for the task to calculate an average of 20 consecutive values from an ultrasonic sensor within a shorter time frame. This was necessary to mitigate severe fluctuations in detected distances.
+Project Detail
+- Assembled hardware for zonal architecture using a HPC, 3 ZCUs, 3 Arduinos and 12 ultrasonic sensors.
+- Gained experience to network layer. Ethernet for HPC and ZCU communication, and CAN for ZCU and Arduino communication.
+- Developed a FreeRTOS task for parking logic based on state machine running on HPC (RA6M3 ECU).
+
+Problems
+- There was severe fluctuations of sensor value. To mitigate this, reduced the time interval of the task to receive 20 sensor response in the same time frame and derived an average of 20 consecutive values from an ultrasonic sensor.
+- Had to move the car by hand to starting point whenever a test is done. To minimize labor, added new functionalities to buttons in HPC. Motor stop and reverse, state initialization to skip unnecessary states that succeeded before.

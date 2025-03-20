@@ -34,6 +34,7 @@ Experience
 ##### [HTTP Webserver](https://github.com/harimseong/HTTP_server)
 Project Detail
 - Implemented a web server supporting HTTP/1.1 and a subset of the nginx configuration.
+- Used IO multiplexing system call(`kqueue`, `kevent`) to implement the server capable of single-threaded multiple connections.
 
 Experience
 - Used Xcode Instruments tools to increase the software quality, Leaks for memory usage monitoring and fixing memory leaks, and Profiler to make sure every parts are consuming CPU as expected and find bad logics such as unnecessary copy and infinite loop.

@@ -2,7 +2,7 @@
 layout: post
 title: "Summary of CppCon Data Oriented Design and C++"
 date: 2025-03-16 20:33:41 +0900
-categories:
+categories: C++
 ---
 
 <!---

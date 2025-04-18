@@ -19,7 +19,7 @@ According to [official guide](https://sw.kovidgoyal.net/kitty/build/), It requir
 
 #### Linux
 ```
-apt-get install simde pkg-config libdbus-1-dev libxcursor-dev libxrandr-dev libxi-dev libxinerama-dev libgl1-mesa-dev libxkbcommon-x11-dev libfontconfig-dev libx11-xcb-dev liblcms2-dev libssl-dev libpython3-dev libxxhash-dev libsimde-dev
+apt-get install pkg-config libdbus-1-dev libxcursor-dev libxrandr-dev libxi-dev libxinerama-dev libgl1-mesa-dev libxkbcommon-x11-dev libfontconfig-dev libx11-xcb-dev liblcms2-dev libssl-dev libpython3-dev libxxhash-dev libsimde-dev
 ```
 #### macOS
 ```
@@ -31,12 +31,12 @@ brew install simde pkg-config
 #### Ubuntu
 If `Python` (>= 3.8) does not exists in apt repository, install it manually.
 ```
-apt-get install python harfbuzz zlib libpng liblcms2 libxxhash openssl freetype fontconfig libcanberra
+apt-get install harfbuzz zlib libpng liblcms2 libxxhash openssl python 
 ```
 #### macOS (10.14 or newer)
 macOS has old version of system python. Use python version manager like pyenv to install and use newer version of python.
 ```
-brew install python harfbuzz zlib libpng liblcms2 libxxhash openssl
+brew install harfbuzz zlib libpng liblcms2 libxxhash openssl freetype fontconfig libcanberra
 ```
 
 ### Build
